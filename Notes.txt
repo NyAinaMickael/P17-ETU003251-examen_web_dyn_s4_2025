@@ -1,0 +1,39 @@
+Tanjona:
+    Mamorona script mideploie projet ao am tomcat projet iray
+    Structure du projet
+    MonProjet
+    |
+        src
+        |    main
+        |    |   java
+        |        |   *.java
+        |        webapp
+        |        |    WEB-INF
+                      |
+        |             	  web.xml
+                      |
+        |	     |
+        |    |
+        build
+        |
+        lib
+    
+    |
+
+Etapes:
+    1-Mamorona /build
+    2-Manao an'ity anaty build
+    build   
+        WEB-INF 
+            classes
+                *.class
+    3-Compiler les .java et envoyer les .class dans classes
+
+    4-Copier le contenu de webapp(ou webapp/*) dans build  
+        infos:ny tena atao eto otrany hoe alefa ao am web inf anle build fotsiny ilay web.xml
+    5-Creer le .war
+        Ny anatin'ny build no avadika .war
+
+    6-Copier le .war dans tomcat
+    
+

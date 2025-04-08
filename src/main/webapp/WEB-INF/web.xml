@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                             http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <display-name>Applcation web pour etudier tester l'authentification par session</display-name>
+    <servlet>
+        <servlet-name>accueil</servlet-name>
+        <servlet-class>src.main.java.Controllers.Accueil</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>login</servlet-name>
+        <servlet-class>src.main.java.Controllers.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ligne_credit</servlet-name>
+        <servlet-class>src.main.java.Controllers.LigneCreditServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ligne_depense</servlet-name>
+        <servlet-class>src.main.java.Controllers.LigneDepenseServlet</servlet-class>
+    </servlet>
+
+
+    <servlet>
+        <servlet-name>form_ligne_depense</servlet-name>
+        <servlet-class>src.main.java.Controllers.FormLigneDepenseServlet</servlet-class>
+    </servlet>
+
+      <servlet>
+        <servlet-name>form_ligne_credit</servlet-name>
+        <servlet-class>src.main.java.Controllers.FormLigneCreditServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>accueil</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>login</servlet-name>
+        <url-pattern>/back_office</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>/views/static/*</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet-mapping>
+        <servlet-name>form_ligne_credit</servlet-name>
+        <url-pattern>/form_ligne_credit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>form_ligne_depense</servlet-name>
+        <url-pattern>/form_ligne_depense</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ligne_credit</servlet-name>
+        <url-pattern>/ligne_credit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ligne_depense</servlet-name>
+        <url-pattern>/ligne_depense</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
